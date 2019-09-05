@@ -1,0 +1,12 @@
+<mat-card-title>Repos Info:</mat-card-title>
+<div class="card-container">
+  <div class="card">
+    <app-repo-list (repoSelected)="getSelected($event)" [repos]="repos"></app-repo-list>
+  </div>
+  <div class="card details">
+    <div>
+      <mat-card-title>Repo details</mat-card-title>
+      <app-repo-detail  [repo]="repoSelected"></app-repo-detail>
+    </div>
+  </div>
+</div>

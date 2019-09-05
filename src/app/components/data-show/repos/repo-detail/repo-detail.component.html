@@ -1,0 +1,17 @@
+<mat-list class="detail-list" *ngIf="repo">
+  <mat-list-item>
+    <p mat-line><span>Id:</span> {{repo.id}}</p>
+  </mat-list-item>
+  <mat-list-item>
+    <p mat-line><span>Name:</span> {{repo.name}}</p>
+  </mat-list-item>
+  <mat-list-item>
+    <p mat-line><span>Url:</span><a target="_blank" href="{{repo.url}}"> {{repo.url}} </a></p>
+  </mat-list-item>
+  <mat-list-item>
+    <p mat-line><span>Stars:</span> {{repo.stargazers_count}} </p>
+  </mat-list-item>
+  <mat-list-item>
+    <p mat-line><span>Language:</span> {{repo.language}} </p>
+  </mat-list-item>
+</mat-list>

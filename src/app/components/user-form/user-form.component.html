@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title>User Form</mat-card-title>
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name">
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!userForm.form.valid">Submit</button>
+  </form>
+  <button class="cleaner" routerLink="/">Clean data</button>
+</mat-card>

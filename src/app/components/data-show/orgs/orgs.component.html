@@ -1,0 +1,12 @@
+<mat-card-title>Orgs Info:</mat-card-title>
+<div class="card-container">
+  <div class="card">
+    <app-org-list (orgSelected)="getSelected($event)" [orgs]="orgs"></app-org-list>
+  </div>
+  <div class="card details">
+    <div>
+      <mat-card-title>Org details</mat-card-title>
+      <app-org-detail *ngIf="orgSelected" [org]="orgSelected"></app-org-detail>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<mat-list class="detail-list" *ngIf="org">
+  <mat-list-item>
+    <p mat-line><span>Id:</span> {{org.id}}</p>
+  </mat-list-item>
+  <mat-list-item>
+    <p mat-line><span>Name:</span> {{org.login}}</p>
+  </mat-list-item>
+  <mat-list-item>
+    <p mat-line><span>Url:</span><a target="_blank" href="{{org.url}}"> {{org.url}} </a></p>
+  </mat-list-item>
+  <mat-list-item>
+    <p mat-line><span>Description:</span> {{org.description}} </p>
+  </mat-list-item>
+  <mat-list-item>
+    <p mat-line><img src="{{ org.avatar_url }}" alt="avatar" height="42" width="42"> </p>
+  </mat-list-item>
+</mat-list>
